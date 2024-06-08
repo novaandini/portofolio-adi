@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* akhir css reset */
+
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+.cf {
+  zoom: 1;
+}
+/* akhir clearfix */
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+}
+
+/* header css */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+  margin-top: 18px;
+  margin-left: 50px;
+}
+
+.logo h4 {
+  line-height: 55px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+header ul {
+  float: right;
+  margin: 10px 25px;
+}
+
+header ul li {
+  float: left;
+  padding: 15px;
+  margin: 10px 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+/* akhir header css */
+
+/* home section */
+#home {
+  width: 100%;
+  margin-top: 86px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Source Sans 3';
+}
+
+.main {
+  width: 900px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.main p {
+  margin: 20px 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main a {
+  background-color: rgb(100, 9, 100);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px 85px;
+}
+
+#home ul {
+  background-color: #fff;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+}
+
+#home img {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+#home img:hover {
+  background-color: lightgray;
+}
+/* akhir home section */
+
+/* about section */
+hr {
+  width: 40px;
+  border: 4px purple solid;
+  border-radius: 4px;
+}
+
+#about {
+  padding: 50px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.aboutme {
+  width: 45%;
+}
+
+.aboutme p {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.skill {
+  width: 45%;
+}
+
+h5 {
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aboutme a {
+  background-color: rgb(100, 9, 100);
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: fit-content;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 50px;
+}
+
+.skill ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill ul li {
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+/* akhir about section */
+
+/* projects section */
+#projects {
+  padding: 50px;
+}
+
+.projects-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects {
+  /* height: 350px; */
+  width: 550px;
+  margin-bottom: 20px;
+  /* background-color: lightgray; */
+  border: 0;
+  border-radius: 5px;
+}
+
+.foto1 {
+  height: 300px;
+  background-image: url(img/Lantern.jpg);
+  background-size: cover;
+}
+
+.foto2 {
+  height: 300px;
+  background-image: url(img/Sunrise.png);
+  background-size: cover;
+}
+
+.foto3 {
+  height: 300px;
+  background-image: url(img/Interkoneksi\ Jaringan\ Secara\ Virtual.png);
+  background-size: cover;
+}
+
+.foto4 {
+  height: 300px;
+  background-image: url(img/Remote\ Server.png);
+  background-size: cover;
+}
+
+.foto {
+  width: 550px;
+  margin-bottom: 10px;
+}
+
+.projects h3 {
+  font-size: 30px;
+  /* line-height: 300px; */
+  text-align: center;
+}
+/* akhir projects section */
+
+/* contact */
+#contact {
+  padding: 50px;
+}
+
+.form {
+  background-color: #fff;
+  width: 800px;
+  margin: auto;
+  box-shadow: 0 0 30px gray;
+}
+
+form {
+  padding: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  padding: 10px 0;
+}
+
+input, textarea {
+  width: 100%;
+  border: 0;
+  background-color: rgb(233, 230, 230);
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+input {
+  height: 60px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+textarea {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+button {
+  display: block;
+  background-color: rgb(100, 9, 100);
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-end;
+  font-family: 'Source Sans 3', sans-serif;
+}
+/* akhir contact section */
+
+/* footer */
+footer {
+  background-color: #000;
+  padding: 50px;
+  color: #fff;
+}
+
+footer h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+footer p {
+  text-align: left;
+  padding: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-about {
+  max-width: 40vw;
+}
+
+.footer-social {
+  width: 15vw;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social img {
+  width: 30px;
+}
+
+.line {
+  border: 0.5px solid rgb(139, 139, 139);
+}
+
+.copyright p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+span {
+  text-decoration: underline;
+}
+/* akhir footer */
